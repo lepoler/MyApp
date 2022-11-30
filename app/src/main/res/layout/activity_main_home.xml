@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityHome">
+
+    <fragment
+        android:id="@+id/fragment"
+        class="com.example.myapp2.Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Siguiente"
+        tools:ignore="UnknownIdInLayout" />
+
+
+    <TextView
+        android:id="@+id/presentacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/antic"
+        android:gravity="center"
+        android:text="Soy Pol y te presento mi Aplicación donde encontrarás mi cv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+
+    <ImageView
+        android:id="@+id/caravan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/cm_9"
+        app:layout_constraintBottom_toTopOf="@+id/cooh"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/nomad"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/nomad_9"
+        app:layout_constraintBottom_toTopOf="@+id/tgtg"
+        app:layout_constraintEnd_toStartOf="@+id/catfons" />
+
+    <ImageView
+        android:id="@+id/detour"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/detour_9"
+        app:layout_constraintBottom_toTopOf="@+id/picketts"
+        app:layout_constraintEnd_toStartOf="@+id/nomad"
+        app:layout_constraintStart_toEndOf="@+id/caravan" />
+
+    <ImageView
+        android:id="@+id/catfons"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/catfons_9"
+        app:layout_constraintBottom_toTopOf="@+id/decat"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/cooh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/cooh_9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/picketts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/pickettts_9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tgtg"
+        app:layout_constraintStart_toEndOf="@+id/cooh" />
+
+    <ImageView
+        android:id="@+id/tgtg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/tgtg_9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/decat" />
+
+    <ImageView
+        android:id="@+id/decat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/deca_9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
